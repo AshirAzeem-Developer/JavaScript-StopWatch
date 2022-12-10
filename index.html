@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>StopWatch</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="bg-black py-5 m-5    ">
+   
+    <div class="container align-items-center mx-auto py-5 mt-5">
+        <div class="row justify-content-center">
+            <h1 class="display-1 text-center text-white border-bottom border-4 border-success w-50"  >
+                Stop Watch
+            </h1>
+        </div>
+        <div class="row justify-content-center py-5">
+            
+       <div class="col-md-3 mx-5 lightBg">
+        <div>
+            <p class="text-center display-4  text-white">Milli Seconds</p>
+            <p class="miliSecs text-center display-4 text-success  " id="displayMiliSec" >
+                00
+            </p>
+        </div>
+       </div>
+       <div class="col-md-3 mx-5 lightBg">
+        <div>
+            <p class="text-center display-4 text-white">Seconds</p>
+            <p class="text-center display-4 text-success  " id="displaySec">
+                00
+            </p>
+        </div>
+       </div>
+        </div>
+        <div class="row justify-content-center ">
+            <div class="col-md-3 text-center lightBg">
+                <p class="text-center display-4 text-white">Minutes</p>
+                <p class="min text-center display-4 text-success  " id="displayMin">
+                    00
+                </p>
+            </div>
+        </div>
+        <div class="buttons text-center py-5">
+            <button type="button" class="btn btn-success " onclick="startTimer()">Start</button>
+<button type="button" class="btn btn-danger" onclick="pauseTimer()">Stop</button>
+<button type="button" class="btn btn-warning" onclick="resetTimer()">Reset</button>
+
+        </div>
+
+    </div>
+
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
